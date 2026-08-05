@@ -59,7 +59,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T15:03:46.436Z  
+**Submitted:** 2026-08-05T15:07:50.190Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -67,8 +67,25 @@ using namespace std;
 
 int main() {
 	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+    int X1, Y1, X2, Y2;
+    cin >> X1 >> Y1 >> X2 >> Y2;
 
-}
+    if (X1 == X2 && Y1 == Y2) {
+        cout << 0<<endl;
+    }
+    else if (X1 + Y1 == X2 + Y2 || X1 - Y1 == X2 - Y2) {
+        cout << 1<<endl;
+    }
+    else if ((X1 + Y1) % 2 != (X2 + Y2) % 2) {
+        cout << -1<<endl;  // impossible
+    }
+    else {
+        cout << 2<<endl;
+    }
+}}
 
 ```
 
