@@ -53,7 +53,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T14:52:04.618Z  
+**Submitted:** 2026-08-05T14:56:13.967Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -63,10 +63,11 @@ int main() {
 	// your code goes here
     int t;
     cin>>t;
-    while(t--){
-        int N,X,Y;
-        cin>>N,X,Y;
-        
+    int N,X,Y;
+    for(int i=0;i<t;i++){
+        cin>>N>>X>>Y;
+        if(N<=3) {cout<<N*X<<endl;}
+        else {cout<<3*X+(N-3)*Y<<endl;}
     }
     
 }
