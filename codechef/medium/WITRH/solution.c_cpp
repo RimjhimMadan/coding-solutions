@@ -5,5 +5,7 @@ int main() {
 	// your code goes here
     int X,Y,K;
     cin>>X>>Y>>K;
-    
+    int away=abs(Y-X);
+    if(away>K) cout<<"NO";
+    else cout<<"YES";
 }
