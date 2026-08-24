@@ -61,7 +61,7 @@ Since the robot can travel only $5$ units, it cannot reach the charging station.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T13:48:30.493Z  
+**Submitted:** 2026-08-24T13:48:40.467Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
