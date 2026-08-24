@@ -61,7 +61,7 @@ Since the robot can travel only $5$ units, it cannot reach the charging station.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T13:51:13.031Z  
+**Submitted:** 2026-08-24T13:48:59.466Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,9 +71,7 @@ int main() {
 	// your code goes here
     int X,Y,K;
     cin>>X>>Y>>K;
-    int away=abs(Y-X);
-    if(away>K) cout<<"NO";
-    else cout<<"YES";
+    
 }
 
 ```
