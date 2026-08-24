@@ -59,33 +59,38 @@ For the third test case, its sum cannot be made `0`. Therefore, the answer is `-
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T14:04:19.297Z  
+**Submitted:** 2026-08-24T14:02:01.220Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+	// your code goes here
     int T;
-    cin >> T;
-
-    while (T--) {
+    cin>>T;
+    while(T--){
         int N;
-        cin >> N;
+        cin>>N;
         int arr[N];
-        int sum = 0;
-        for (int i = 0; i < N; i++) {
-            cin >> arr[i];
-            sum += arr[i];}
-
-        if (N % 2 != 0)
-            cout << -1 << endl;
-        else
-            cout << abs(sum) / 2 << endl;
+        for(int i=0;i<N;i++){
+            cin>>arr[i];
+        }
+        int sum=0;
+        int count1=0;
+        int count_1=0;
+        for(int i=0;i<N;i++){
+            sum+=arr[i];
+            if(arr[i]==1) count1++;
+            else count_1++;
+        }
+         if(N%2!=0) cout<<"-1"<<endl;
+       else if(count1==count_1) cout<<sum<<endl;
+      else if(count1>count_1) cout<<sum/2<<endl;
+       
     }
-
-    
 }
+
 ```
 
 ---
