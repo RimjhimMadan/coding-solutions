@@ -67,20 +67,40 @@ Since `x` comes first alphabetically, the answer is `x`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T14:06:44.229Z  
+**Submitted:** 2026-08-24T14:15:53.370Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
-    string s;
-    getline(cin,s);
-    
-    
-}
+    string S;
+    getline(cin, S);
 
+    int freq[26] = {0};
+
+    for (char ch : S) {
+        ch = tolower(ch);
+
+        if (ch >= 'a' && ch <= 'z') {
+            freq[ch - 'a']++;
+        }
+    }
+
+    int maxFreq = 0;
+    char answer = 'a';
+
+    for (int i = 0; i < 26; i++) {
+        if (freq[i] > maxFreq) {
+            maxFreq = freq[i];
+            answer = 'a' + i;
+        }
+    }
+
+    cout << answer << endl;
+
+    return 0;
+}
 ```
 
 ---
