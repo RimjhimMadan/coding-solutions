@@ -59,7 +59,7 @@ For the third test case, its sum cannot be made `0`. Therefore, the answer is `-
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T13:54:28.761Z  
+**Submitted:** 2026-08-24T13:55:45.781Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -74,13 +74,14 @@ int main() {
         cin>>N;
         int arr[N];
         for(int i=0;i<N;i++){
-            cin>>arr[N];
+            cin>>arr[i];
         }
         int sum=0;
         for(int i=0;i<N;i++){
             sum+=arr[i];
         }
-        
+        cout<<sum<<endl
+        ;
     }
 }
 
