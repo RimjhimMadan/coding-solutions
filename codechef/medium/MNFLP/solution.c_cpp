@@ -20,8 +20,9 @@ int main() {
             if(arr[i]==1) count1++;
             else count_1++;
         }
-       if(count1==count_1) cout<<sum<<endl;
+         if(N%2!=0) cout<<"-1"<<endl;
+       else if(count1==count_1) cout<<sum<<endl;
       else if(count1>count_1) cout<<sum/2<<endl;
-       else if(N%2!=0) cout<<"-1"<<endl;
+       
     }
 }
