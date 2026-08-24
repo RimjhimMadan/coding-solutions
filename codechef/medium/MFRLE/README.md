@@ -67,7 +67,7 @@ Since `x` comes first alphabetically, the answer is `x`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T14:15:53.370Z  
+**Submitted:** 2026-08-24T14:16:26.801Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
