@@ -118,35 +118,47 @@ Therefore, the output is `1`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:00:26.018Z  
+**Submitted:** 2026-08-31T14:02:33.534Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
     int N;
-    cin>>N;
-    int A[N];
-    int X;
-    cin>>X;
-    for(int i=0;i<N;i++){
-        cin>>A[i];
-        
-    }
-    int c=0,idx=0;
-    for(int i=0;i<N;i++){
-        if(X==A[i]) {idx=i+1;
-            c++;
-        }
-        
-    }
-    if(c==1) cout<<"-2";
-    else if(c==0) cout<<"-1";
-    else cout<<idx;
-}
+    cin >> N;
 
+    int A[N];
+
+    // Input array
+    for (int i = 0; i < N; i++) {
+        cin >> A[i];
+    }
+
+    // Input X
+    int X;
+    cin >> X;
+
+    int c = 0;
+
+    for (int i = 0; i < N; i++) {
+        if (A[i] == X) {
+            c++;
+
+            if (c == 2) {
+                cout << i;
+                return 0;
+            }
+        }
+    }
+
+    if (c == 0)
+        cout << -1;
+    else
+        cout << -2;
+
+    return 0;
+}
 ```
 
 ---
