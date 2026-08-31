@@ -2,24 +2,37 @@
 using namespace std;
 
 int main() {
-	// your code goes here
     int N;
-    cin>>N;
+    cin >> N;
+
     int A[N];
+
+    // Input array
+    for (int i = 0; i < N; i++) {
+        cin >> A[i];
+    }
+
+    // Input X
     int X;
-    cin>>X;
-    for(int i=0;i<N;i++){
-        cin>>A[i];
-        
-    }
-    int c=0,idx=0;
-    for(int i=0;i<N;i++){
-        if(X==A[i]) {idx=i+1;
+    cin >> X;
+
+    int c = 0;
+
+    for (int i = 0; i < N; i++) {
+        if (A[i] == X) {
             c++;
+
+            if (c == 2) {
+                cout << i;
+                return 0;
+            }
         }
-        
     }
-    if(c==1) cout<<"-2";
-    else if(c==0) cout<<"-1";
-    else cout<<idx;
+
+    if (c == 0)
+        cout << -1;
+    else
+        cout << -2;
+
+    return 0;
 }
