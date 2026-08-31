@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+int X,A,Y,B,D;
+cin>>X>>A>>Y>>B>>D;
+if(X*A+Y*B >=D) cout<<"YES";
+else cout<<"NO";
+}
