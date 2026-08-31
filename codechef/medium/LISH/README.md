@@ -77,25 +77,50 @@ The total weight is `28`, so the minimum number of units required is `3`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:05:17.103Z  
+**Submitted:** 2026-08-31T14:06:15.030Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
-int W;
-cin>>W;
-int N;
-cin>>N;
-int A[N];
-for(int i=0;i<N;i++){
-    cin>>A[i];
-}
+    int N;
+    cin >> N;
 
-}
+    long long W;
+    cin >> W;
 
+    vector<long long> A(N);
+
+    for (int i = 0; i < N; i++) {
+        cin >> A[i];
+    }
+
+    vector<long long> weights;
+
+    for (int i = 0; i < N; i++) {
+        weights.push_back(A[i]);
+        weights.push_back(A[i]);
+    }
+
+  
+    sort(weights.rbegin(), weights.rend());
+
+    long long total = 0;
+
+    for (int i = 0; i < weights.size(); i++) {
+        total += weights[i];
+
+        if (total >= W) {
+            cout << i + 1 << endl;
+            return 0;
+        }
+    }
+
+    cout << -1 << endl;
+
+    return 0;
+}
 ```
 
 ---
