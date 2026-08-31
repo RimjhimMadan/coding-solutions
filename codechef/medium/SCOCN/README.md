@@ -118,7 +118,7 @@ Therefore, the output is `1`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T13:54:14.572Z  
+**Submitted:** 2026-08-31T14:00:00.141Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -135,7 +135,16 @@ int main() {
         cin>>A[i];
         
     }
-    
+    int c=0,idx;
+    for(int i=0;i<N;i++){
+        if(X==A[i]) {idx=i+1;
+            c++;
+        }
+        
+    }
+    if(c==1) cout<<"-2";
+    else if(c==0) cout<<"-1";
+    else cout<<idx;
 }
 
 ```
