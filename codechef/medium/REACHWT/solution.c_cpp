@@ -8,7 +8,8 @@ int main() {
 	while(T--){
 	    int N;
 	    cin>>N;
-	    
+	    int a=N%2;
+	    cout<<(N-a)*30+a*20<<endl;
 	}
 
 }
