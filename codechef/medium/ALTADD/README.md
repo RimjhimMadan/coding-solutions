@@ -63,12 +63,12 @@ Output
 
 ## Solution
 
-**Language:** C++  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:16:02.904Z  
+**Submitted:** 2026-09-02T15:17:24.827Z  
 
-```cpp
+```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -85,10 +85,11 @@ int main() {
 	        cin>>A[i];
 	        
 	    }
-	    res=abs(A[0])+abs(A[N-1]);
+	    res=abs(A[0]);
 	    for(int i=1;i<N;i++){
 	        res=res+abs(A[i]+A[i-1]);
 	    }
+	    res+=abs(A[N-1]);
 	    cout<<res/2<<endl;
 	}
 
