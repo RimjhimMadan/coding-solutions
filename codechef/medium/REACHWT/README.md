@@ -52,7 +52,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:37:48.493Z  
+**Submitted:** 2026-09-02T14:41:52.140Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -65,7 +65,8 @@ int main() {
 	while(T--){
 	    int N;
 	    cin>>N;
-	    
+	    int a=N%2;
+	    cout<<(N-a)*30+a*20<<endl;
 	}
 
 }
