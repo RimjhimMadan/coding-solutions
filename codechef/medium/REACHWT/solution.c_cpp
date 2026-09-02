@@ -9,7 +9,7 @@ int main() {
 	    int N;
 	    cin>>N;
 	    int a=N%2;
-	    cout<<(N-a)*30+a*20<<endl;
+	    cout<<(N-a)/2*30+a*20<<endl;
 	}
 
 }
