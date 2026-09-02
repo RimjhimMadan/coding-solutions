@@ -14,10 +14,11 @@ int main() {
 	        cin>>A[i];
 	        
 	    }
-	    res=abs(A[0])+abs(A[N-1]);
+	    res=abs(A[0]);
 	    for(int i=1;i<N;i++){
 	        res=res+abs(A[i]+A[i-1]);
 	    }
+	    res+=abs(A[N-1]);
 	    cout<<res/2<<endl;
 	}
 
