@@ -74,7 +74,7 @@ So, no solution exists.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:38:44.484Z  
+**Submitted:** 2026-09-09T14:43:10.042Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -82,7 +82,21 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+    int t;
+    cin>>t;
+    while(t--){
+        int N;
+        cin>>N;
+        string A,B;
+        cin>>A>>B;
+        int cA=0,cB=0;
+        for(int i=0;i<N;i++){
+            if(A[i]=='a') cA++;
+            if(B[i]=='a') cB++;
+        }
+        if(cA+cB==N) cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
+    }
 }
 
 ```
