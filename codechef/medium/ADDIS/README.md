@@ -77,7 +77,7 @@ It can be shown that this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:43:38.394Z  
+**Submitted:** 2026-09-09T14:47:16.281Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -85,6 +85,23 @@ using namespace std;
 
 int main() {
 	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    unordered_map<long long,int>f;
+	    for(int i=0;i<n;i++){
+	        long long x;
+	        cin>>x;
+	        f[x]++;
+	    }
+	    int maxf=0;
+	    for(auto p:f){
+	        maxf=max(maxf,p.second);
+	    }
+	    cout<<(maxf+1)/2<<endl;
+	}
 
 }
 
