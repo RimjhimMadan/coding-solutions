@@ -52,9 +52,9 @@ Output: []
 ## Solution
 
 **Language:** C++  
-**Runtime:** 22 ms (beats 14.98%)  
-**Memory:** 20 MB (beats 15.29%)  
-**Submitted:** 2026-09-10T14:28:30.388Z  
+**Runtime:** 20 ms (beats 15.49%)  
+**Memory:** 20.1 MB (beats 14.69%)  
+**Submitted:** 2026-09-10T14:28:47.335Z  
 
 ```cpp
 class Solution {
