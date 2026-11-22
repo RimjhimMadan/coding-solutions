@@ -38,26 +38,25 @@ Output: 2
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 50.3 MB (beats 24.46%)  
-**Submitted:** 2026-11-22T13:26:12.130Z  
+**Memory:** 50.1 MB (beats 85.03%)  
+**Submitted:** 2026-11-22T13:52:04.594Z  
 
 ```cpp
 
 class Solution {
 public:
     int findMaxConsecutiveOnes(vector<int>& nums) {
-        int count = 0;
+
+        int left = 0;
         int maxi = 0;
 
-        for(int i = 0; i < nums.size(); i++) {
-            if(nums[i] == 1) {
-                count++;
-            }
-            else {
-                count = 0;
+        for(int right = 0; right < nums.size(); right++) {
+
+            if(nums[right] == 0) {
+                left = right + 1;
             }
 
-            maxi = max(maxi, count);
+            maxi = max(maxi, right - left + 1);
         }
 
         return maxi;
